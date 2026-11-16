@@ -42,6 +42,7 @@ body {
   color: white;
   text-shadow: 2px 2px 8px black;
 }
+
 .jumatate-dreapta {
   width: 50%;
   height: 100%;
@@ -52,7 +53,6 @@ body {
   justify-content: flex-start;
   overflow-y: hidden;
 }
-
 
 .jumatate-dreapta h2 {
   font-size: 38px;
@@ -181,6 +181,7 @@ body {
 @media (max-width: 600px) and (orientation: portrait) {
   .ecran-principal {
     flex-direction: column;
+    height: auto;
     min-height: auto;
   }
 
@@ -200,7 +201,9 @@ body {
 
   .jumatate-dreapta {
     width: 100%;
+    height: auto;
     min-height: auto;
+    overflow-y: visible;
     padding: 30px 20px;
   }
 
@@ -256,6 +259,7 @@ body {
 
   .jumatate-dreapta {
     padding: 25px;
+    overflow-y: auto;
   }
 
   .jumatate-dreapta h2 {
@@ -272,12 +276,10 @@ body {
   .zona-scroll {
     padding: 40px 20px;
   }
-
   .patrat-mic {
     height: 170px;
   }
 }
-
 /* --- 3. TABLETA / IPAD (VERTICAL SI ORIZONTAL): la fel ca pe PC --- */
 @media (min-width: 601px) and (max-width: 1366px) and (min-height: 501px) {
   .textpp {
@@ -285,15 +287,12 @@ body {
     bottom: 25px;
     left: 25px;
   }
-
   .jumatate-dreapta {
     padding: 40px;
   }
-
   .jumatate-dreapta h2 {
     font-size: 34px;
   }
-
   .patrat-mic {
     height: 220px;
   }
