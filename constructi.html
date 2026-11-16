@@ -1,90 +1,172 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ro">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Constructi</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Construcții</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
+      * {
+        box-sizing: border-box;
+      }
 
+      body {
+        background-color: #434343;
+        font-family: Arial, sans-serif;
+        color: white;
+        margin: 0;
+        padding: 40px 20px;
+      }
+
+      .buton-inapoi {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        background-color: #222222;
+        padding: 10px 18px;
+        border-radius: 6px;
+        border: 1px solid #555;
+        margin-bottom: 25px;
+        font-size: 16px;
+      }
+
+      .buton-inapoi:hover {
+        background-color: #444444;
+        border-color: white;
+      }
+
+      .coloana-lunga {
+        max-width: 700px;
+        margin: 0 auto;
+        background-color: #333333;
+        padding: 40px;
+        border-radius: 10px;
+        border: 2px solid #666;
+      }
+
+      .titlu-pagina {
+        text-align: center;
+        font-size: 36px;
+        margin-top: 0;
+        margin-bottom: 40px;
+        border-bottom: 2px solid #666;
+        padding-bottom: 15px;
+      }
+
+      .bloc-continut {
+        margin-bottom: 50px;
+      }
+
+      .subtitlu-constructie {
+        font-size: 24px;
+        margin-top: 0;
+        margin-bottom: 15px;
+        color: #ffffff;
+      }
+
+      .poza-sectiune {
+        width: 100%;
+        height: auto;
+        max-height: 550px;
+        object-fit: contain;
+        border-radius: 8px;
+        border: 2px solid #777;
+        background-color: #222;
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      .text-sectiune {
+        font-size: 19px;
+        line-height: 1.7;
+        color: #e0e0e0;
+        margin: 0;
+        text-indent: 25px;
+      }
+      .buton-inapoi {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1000;
+        color: white;
+        text-decoration: none;
+        background-color: #222222;
+        padding: 12px 20px;
+        border-radius: 8px;
+        border: 2px solid #666;
+        font-size: 16px;
+        font-weight: bold;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        transition: 0.2s;
+      }
+
+      .buton-inapoi:hover {
+        background-color: #444444;
+        border-color: white;
+      }
+      @media (max-width: 768px) {
         body {
-            background-color: #434343;
-            font-family: Arial, sans-serif;
-            color: white;
-            margin: 0;
-            padding: 40px 20px;
+          padding-top: 75px;
         }
 
-        .coloana-lunga {
-            max-width: 700px;
-            margin: 0 auto;
-            background-color: #333333;
-            padding: 40px;
-            border-radius: 10px;
-            border: 2px solid #666;
+        .buton-inapoi {
+          top: 15px;
+          left: 15px;
+          padding: 10px 15px;
+          font-size: 15px;
         }
-
-        .titlu-pagina {
-            text-align: center;
-            font-size: 36px;
-            margin-top: 0;
-            margin-bottom: 40px;
-            border-bottom: 2px solid #666;
-            padding-bottom: 15px;
-        }
-
-        .bloc-continut {
-            margin-bottom: 50px;
-        }
-
-        .poza-sectiune {
-            width: 100%;
-            height: 380px;
-            object-fit: cover;
-            border-radius: 8px;
-            border: 2px solid #777;
-            background-color: #222;
-            display: block;
-            margin-bottom: 20px;
-        }
-
-        .text-sectiune {
-            font-size: 19px;
-            line-height: 1.7;
-            color: #e0e0e0;
-            margin: 0;
-        }
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
+    <a href="javascript:history.back()" class="buton-inapoi">← Înapoi</a>
     <div class="coloana-lunga">
-        <h1 class="titlu-pagina">Constructile lui Leonardo da Vinci</h1>
+      <h1 class="titlu-pagina">Construcțiile lui Leonardo da Vinci</h1>
 
-        <div class="bloc-continut">
-            <img src="poza1-a.jpg" alt="Prima imagine" class="poza-sectiune">
-            <p class="text-sectiune">
-                1
-            </p>
-        </div>
+      <div class="bloc-continut">
+        <h2 class="subtitlu-constructie">1. Podul autoportant</h2>
+        <img
+          src="pod autoportant.webp"
+          alt="Podul autoportant"
+          class="poza-sectiune"
+        />
+        <p class="text-sectiune">
+          Acest pod ingenios este format din bârne de lemn care se susțin
+          singure prin greutatea proprie și prin frecare, fără cuie, frânghii
+          sau mortar. A fost gândit pentru armate, putând fi asamblat și
+          demontat foarte rapid peste râuri.
+        </p>
+      </div>
 
-        <div class="bloc-continut">
-            <img src="poza1-b.jpg" alt="A doua imagine" class="poza-sectiune">
-            <p class="text-sectiune">
-                2
-            </p>
-        </div>
+      <div class="bloc-continut">
+        <h2 class="subtitlu-constructie">2. Podul peste Cornul de Aur</h2>
+        <img
+          src="pod-norvegian-leonardo.jpg"
+          alt="Podul peste Cornul de Aur"
+          class="poza-sectiune"
+        />
+        <p class="text-sectiune">
+          Proiectat în 1502 pentru sultanul Baiazid al II-lea din Istanbul,
+          podul avea o singură arcadă uriașă de 240 de metri lungime. Deși nu a
+          fost construit atunci, designul său a fost atât de avansat încât în
+          Norvegia a fost realizată în 2001 o versiune modernă bazată pe aceste
+          planuri.
+        </p>
+      </div>
 
-        <div class="bloc-continut">
-            <img src="poza1-c.jpg" alt="A treia imagine" class="poza-sectiune">
-            <p class="text-sectiune">
-                3
-            </p>
-        </div>
-
+      <div class="bloc-continut">
+        <h2 class="subtitlu-constructie">3. Orașul Ideal</h2>
+        <img
+          src="ciudad-leonardo-portada.jpg"
+          alt="Orașul Ideal"
+          class="poza-sectiune"
+        />
+        <p class="text-sectiune">
+          Conceput după epidemia de ciumă din Milano, acest proiect de urbanism
+          propunea străzi largi, curate și sisteme moderne de canalizare. Orașul
+          era împărțit pe două niveluri: sus circulau pietonii, iar jos se
+          desfășura transportul de mărfuri și curgeau canalele cu apă.
+        </p>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>

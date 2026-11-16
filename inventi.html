@@ -1,89 +1,167 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ro">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inventi</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invenții</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
+      * {
+        box-sizing: border-box;
+      }
 
+      body {
+        background-color: #434343;
+        font-family: Arial, sans-serif;
+        color: white;
+        margin: 0;
+        padding: 40px 20px;
+      }
+
+      .buton-inapoi {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        background-color: #222222;
+        padding: 10px 18px;
+        border-radius: 6px;
+        border: 1px solid #555;
+        margin-bottom: 25px;
+        font-size: 16px;
+      }
+
+      .buton-inapoi:hover {
+        background-color: #444444;
+        border-color: white;
+      }
+
+      .coloana-lunga {
+        max-width: 700px;
+        margin: 0 auto;
+        background-color: #333333;
+        padding: 40px;
+        border-radius: 10px;
+        border: 2px solid #666;
+      }
+
+      .titlu-pagina {
+        text-align: center;
+        font-size: 36px;
+        margin-top: 0;
+        margin-bottom: 40px;
+        border-bottom: 2px solid #666;
+        padding-bottom: 15px;
+      }
+
+      .bloc-continut {
+        margin-bottom: 50px;
+      }
+
+      .subtitlu-inventie {
+        font-size: 24px;
+        margin-top: 0;
+        margin-bottom: 15px;
+        color: #ffffff;
+      }
+
+      .poza-sectiune {
+        width: 100%;
+        height: auto;
+        max-height: 550px;
+        object-fit: contain;
+        border-radius: 8px;
+        border: 2px solid #777;
+        background-color: #222;
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      .text-sectiune {
+        font-size: 19px;
+        line-height: 1.7;
+        color: #e0e0e0;
+        margin: 0;
+        text-indent: 25px;
+      }
+      .buton-inapoi {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1000;
+        color: white;
+        text-decoration: none;
+        background-color: #222222;
+        padding: 12px 20px;
+        border-radius: 8px;
+        border: 2px solid #666;
+        font-size: 16px;
+        font-weight: bold;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        transition: 0.2s;
+      }
+
+      .buton-inapoi:hover {
+        background-color: #444444;
+        border-color: white;
+      }
+      @media (max-width: 768px) {
         body {
-            background-color: #434343;
-            font-family: Arial, sans-serif;
-            color: white;
-            margin: 0;
-            padding: 40px 20px;
+          padding-top: 75px;
         }
 
-        .coloana-lunga {
-            max-width: 700px;
-            margin: 0 auto;
-            background-color: #333333;
-            padding: 40px;
-            border-radius: 10px;
-            border: 2px solid #666;
+        .buton-inapoi {
+          top: 15px;
+          left: 15px;
+          padding: 10px 15px;
+          font-size: 15px;
         }
-
-        .titlu-pagina {
-            text-align: center;
-            font-size: 36px;
-            margin-top: 0;
-            margin-bottom: 40px;
-            border-bottom: 2px solid #666;
-            padding-bottom: 15px;
-        }
-        .bloc-continut {
-            margin-bottom: 50px;
-        }
-
-        .poza-sectiune {
-            width: 100%;
-            height: 380px;
-            object-fit: cover;
-            border-radius: 8px;
-            border: 2px solid #777;
-            background-color: #222;
-            display: block;
-            margin-bottom: 20px;
-        }
-
-        .text-sectiune {
-            font-size: 19px;
-            line-height: 1.7;
-            color: #e0e0e0;
-            margin: 0;
-        }
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
+    <a href="javascript:history.back()" class="buton-inapoi">← Înapoi</a>
     <div class="coloana-lunga">
-        <h1 class="titlu-pagina">Inventile lui Leonardo da Vinci</h1>
+      <h1 class="titlu-pagina">Invențiile lui Leonardo da Vinci</h1>
 
-        <div class="bloc-continut">
-            <img src="poza1-a.jpg" alt="Prima imagine" class="poza-sectiune">
-            <p class="text-sectiune">
-                1
-            </p>
-        </div>
+      <div class="bloc-continut">
+        <h2 class="subtitlu-inventie">1. Șurubul aerian (Elicopterul)</h2>
+        <img
+          src="Leonardo_da_Vinci_helicopter.jpg"
+          alt="Șurubul aerian"
+          class="poza-sectiune"
+        />
+        <p class="text-sectiune">
+          Proiectat în jurul anului 1489, acest aparat de zbor folosea o elice
+          uriașă în spirală din pânză de in întinsă pe un cadru de lemn.
+          Leonardo a considerat că, dacă elicea se rotește suficient de repede,
+          se va „înșuruba” în aer și va ridica aparatul de la sol.
+        </p>
+      </div>
 
-        <div class="bloc-continut">
-            <img src="poza1-b.jpg" alt="A doua imagine" class="poza-sectiune">
-            <p class="text-sectiune">
-                2
-            </p>
-        </div>
+      <div class="bloc-continut">
+        <h2 class="subtitlu-inventie">2. Parașuta</h2>
+        <img
+          src="ParachuteLeonardodaVinci.jpg"
+          alt="Parașuta"
+          class="poza-sectiune"
+        />
+        <p class="text-sectiune">
+          Concepută sub forma unei piramide din pânză de in susținută de bare
+          ușoare din lemn, parașuta avea rolul de a încetini căderea unui om de
+          la mare înălțime. Testele moderne realizate după schițele sale au
+          dovedit că designul funcționează și asigură o aterizare sigură.
+        </p>
+      </div>
 
-        <div class="bloc-continut">
-            <img src="poza1-c.jpg" alt="A treia imagine" class="poza-sectiune">
-            <p class="text-sectiune">
-               3
-        </div>
-
+      <div class="bloc-continut">
+        <h2 class="subtitlu-inventie">3. Vehiculul blindat (Tancul)</h2>
+        <img src="tancu.jpg" alt="Vehiculul blindat" class="poza-sectiune" />
+        <p class="text-sectiune">
+          Această mașină de război era protejată de o carapace conică din lemn
+          întărit cu plăci metalice și avea tunuri dispuse de jur împrejur.
+          Vehiculul era pus în mișcare din interior de opt oameni care învârteau
+          manivele conectate la roți.
+        </p>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>
- 
